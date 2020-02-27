@@ -18,7 +18,7 @@ data = scale(data_raw[,c("net_area","lot_size")])
 
 n_clusters = 4 # 2 clusters give a nice separation
 # K-Means Cluster Analysis
-fit <- kmeans(data, n_clusters, nstart = 100)
+fit <- kmeans(data, n_clusters, nstart = 150)
 # get cluster means 
 # aggregate(data,by=list(fit$cluster),FUN=mean)
 # append cluster assignment
